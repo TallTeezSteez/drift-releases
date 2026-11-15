@@ -1,0 +1,11 @@
+{
+  "version": "0.2.1",
+  "notes": "Theme README: point to the shared theme repo (#109)",
+  "pub_date": "2026-11-15T23:46:36.672Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSY240aittN2MzQTNSOGlUNFJRazlyL2lnek1naSsyczNjZjI3WkpYRlVydVQwVGxaK1pyWHJIcDQ4MlRXUzg3RHZ5enJwSnZpMExLWXRKZUJqWUtEN0lDMkZnd005UEE4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0Nzg2MzkzCWZpbGU6RHJpZnRfMC4yLjFfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMi4xCmZqSm9sSkhIV1dSWU5NTzFGSVhpTnRuVVhMTW9xTVIrbG1CcmNnVFVqb21EOGhtcGRZSGtkaVJBUnIrT25adnVjL05EL3g2QjRhdC9SSHBGVGhhSUJ3PT0K",
+      "url": "https://github.com/TallTeezSteez/drift-releases/releases/download/v0.2.1/Drift_0.2.1_x64-setup.exe"
+    }
+  }
+}
