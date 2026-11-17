@@ -1,0 +1,128 @@
+name: Release
+# THE ONE WAY TO PUT OUT A NEW DRIFT (same steps for every app):
+#   GitHub > TallTeezSteez/drift-releases > Actions > Release > Run workflow.
+#   Version: leave blank for the next number (0.2.2 -> 0.2.3). What's new: optional.
+# It builds a signed Drift on GitHub's free Windows machine (free because this repo is public), then publishes one full release with:
+#   Drift-Setup.exe        same name every time, so this link never changes:
+#                          https://github.com/TallTeezSteez/drift-releases/releases/latest/download/Drift-Setup.exe
+#   Drift-Setup.exe.sig    its signature; Drift checks it before installing an update
+#   latest.json            what installed copies read to update themselves
+# One copy only: no hourly Test builds and no Ship step any more (16 Nov 2026). test.json in this repo now just follows
+# the public release, so a copy still set to the old Test channel keeps getting updates.
+# The app code is the private drift repo, read with the SOURCE_TOKEN secret (or the older DRIFT_REPO_TOKEN).
+# Master copy of this file: release/drift-releases/ in the Drift repo.
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version, like 1.2.3 (blank = the next number)'
+        required: false
+        default: ''
+      notes:
+        description: "What's new (optional, shows on the download page)"
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+
+concurrency:
+  group: release
+  cancel-in-progress: false
+
+env:
+  APP: Drift
+
+jobs:
+  release:
+    runs-on: windows-latest
+    timeout-minutes: 60
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - name: Pick the version
+        env:
+          GH_TOKEN: ${{ github.token }}
+          V: ${{ inputs.version }}
+        run: |
+          V="${V// /}"; V="${V#v}"
+          if [ -z "$V" ]; then
+            last=$(gh api "repos/$GITHUB_REPOSITORY/releases?per_page=100" --jq '.[].tag_name' | sed -n 's/^v\([0-9]*\.[0-9]*\.[0-9]*\)$/\1/p' | sort -V | tail -1)
+            if [ -z "$last" ]; then V=1.0.0; else IFS=. read -r a b c <<< "$last"; V="$a.$b.$((c + 1))"; fi
+          fi
+          [[ "$V" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]] || { echo "::error::Not a version: $V (use something like 1.2.3)"; exit 1; }
+          if gh api "repos/$GITHUB_REPOSITORY/releases/tags/v$V" >/dev/null 2>&1; then echo "::error::v$V is already released. Leave the version blank, or pick a higher one."; exit 1; fi
+          echo "VERSION=$V" >> "$GITHUB_ENV"
+          echo "Releasing $APP $V"
+
+      - uses: actions/checkout@v4
+        with:
+          path: releases
+
+      - name: Get the drift code (private repo, read with the SOURCE_TOKEN secret)
+        uses: actions/checkout@v4
+        with:
+          repository: TallTeezSteez/drift
+          token: ${{ secrets.SOURCE_TOKEN || secrets.DRIFT_REPO_TOKEN }}
+          path: src
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: src/package-lock.json
+      - uses: dtolnay/rust-toolchain@stable
+      - uses: swatinem/rust-cache@v2
+        with:
+          workspaces: src/src-tauri
+
+      - name: Build and sign
+        working-directory: src
+        env:
+          TAURI_SIGNING_PRIVATE_KEY: ${{ secrets.TAURI_SIGNING_PRIVATE_KEY }}
+          TAURI_SIGNING_PRIVATE_KEY_PASSWORD: ${{ secrets.TAURI_SIGNING_PRIVATE_KEY_PASSWORD }}
+          DRIFT_PUBKEY: ${{ secrets.DRIFT_PUBKEY }}
+        run: |
+          npm ci
+          node -e '
+            const c = { version: process.env.VERSION, bundle: { createUpdaterArtifacts: true, targets: ["nsis"] },
+                        plugins: { updater: { pubkey: process.env.DRIFT_PUBKEY.trim() } } };
+            require("fs").writeFileSync("release.conf.json", JSON.stringify(c));'
+          npx tauri build --config release.conf.json
+
+      - name: Publish
+        env:
+          GH_TOKEN: ${{ github.token }}
+          NOTES: ${{ inputs.notes }}
+        run: |
+          dir=src/src-tauri/target/release/bundle/nsis
+          ls -la "$dir"
+          built=$(ls "$dir"/*-setup.exe | head -1)
+          [ -f "$built" ] && [ -f "$built.sig" ] || { echo "::error::The signed installer is missing"; exit 1; }
+          # Same file name every release. The signature is of the file's contents, so renaming doesn't change it.
+          cp "$built" "$APP-Setup.exe"; cp "$built.sig" "$APP-Setup.exe.sig"
+          url="https://github.com/$GITHUB_REPOSITORY/releases/download/v$VERSION/$APP-Setup.exe"
+          short="${NOTES:-Drift $VERSION}"
+          node -e '
+            const [v, notes, sig, url] = process.argv.slice(1);
+            const j = { version: v, notes, pub_date: new Date().toISOString(),
+                        platforms: { "windows-x86_64": { signature: sig, url } } };
+            require("fs").writeFileSync("latest.json", JSON.stringify(j, null, 2));' "$VERSION" "$short" "$(cat "$APP-Setup.exe.sig")" "$url"
+          {
+            echo "$APP $VERSION for Windows."
+            if [ -n "${NOTES// /}" ]; then echo; echo "**What's new:** $NOTES"; fi
+            echo
+            echo "**Download:** $APP-Setup.exe below, under Assets."
+            echo
+            echo "**First time you open it:** Windows may show \"Windows protected your PC\" because the app isn't signed with a paid certificate. Click **More info**, then **Run anyway**. You only do this once; after that $APP updates itself."
+          } > notes.md
+          gh release create "v$VERSION" "$APP-Setup.exe" "$APP-Setup.exe.sig" latest.json --repo "$GITHUB_REPOSITORY" --target main \
+            --title "$APP $VERSION" --notes-file notes.md --latest
+          # Copies still on the old Test channel read test.json; point it at this release too.
+          cp latest.json releases/test.json
+          cd releases
+          git config user.name "drift-releases"; git config user.email "drift-releases@users.noreply.github.com"
+          git add test.json
+          git commit -m "Drift $VERSION: Test channel follows the public release" && git push || echo "test.json unchanged"
+          echo "Live: https://github.com/$GITHUB_REPOSITORY/releases/latest/download/$APP-Setup.exe"
