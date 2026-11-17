@@ -14,7 +14,7 @@ These links always get the newest version. Older versions: [all releases](https:
 
 Drift updates itself after that.
 
-More about Drift, with screenshots: https://draftline-gules.vercel.app/drift
+More about Drift, with screenshots: https://draftlineapps.com/drift
 
 ## How a new version goes out
 
