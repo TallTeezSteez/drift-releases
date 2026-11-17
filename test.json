@@ -1,11 +1,11 @@
 {
-  "version": "0.2.2",
-  "notes": "Forms/Reading site: import _db.js so Vercel's Node can load it (#111)",
-  "pub_date": "2026-11-16T06:51:11.946Z",
+  "version": "0.2.5",
+  "notes": "Drift 0.2.5",
+  "pub_date": "2026-11-17T02:11:13.986Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSY240aittN2MzQTFoM3FGUHJDNTVWN2pFbW9xOUpLVlBVb3Vad25hY0RVYmVvdUFuVFBLSFl4L2VFUjh5VDRwUTJGT25UZm9PNlE1U0VKVEpwTnl0anR4U0hPNHcxQ0FRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0ODExODY3CWZpbGU6RHJpZnRfMC4yLjJfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMi4yCnlmb05zQ1JOWnlEUVVQL2ZxNTV3RHlYWG1qWHNXdVZLTFcvdm1QVjdMUCsvQzN2WXBjdWtJbllUVUtCcms1aXlIWVdMaG51eGlBa2VqclZQclEweUJnPT0K",
-      "url": "https://github.com/TallTeezSteez/drift-releases/releases/download/v0.2.2/Drift_0.2.2_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSY240aittN2MzQXhkelZwSjY2N1BUeG9EVHB3Z3B5Y1VmdjVKWmoyell3TklKWFdJQithTFdlQkx2TUp2MG1rM2ZjRXJNby94QUxqS2RERzZHUlErM0VnRTJNT25pT2dvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0ODgxNDczCWZpbGU6RHJpZnRfMC4yLjVfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMi41Cnd2ckVwd0RxU3VpS3E0Rm95YmNtQSt1ZFlNcUlKU1NnN3BxOHpydU4vZThqM1Zqd2k4cE1YU0lTMUhPZXR4NzFzdGluMklLd0hBZnIrcG5KRVBTTUN3PT0K",
+      "url": "https://github.com/TallTeezSteez/drift-releases/releases/download/v0.2.5/Drift-Setup.exe"
     }
   }
 }
