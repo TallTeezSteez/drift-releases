@@ -1,11 +1,11 @@
 {
-  "version": "0.2.6",
-  "notes": "Tidy left menu and top bar: Notebooks, Notes and Docs tabs, quick notes listed under Notes, Files as a folder under Docs, tools as a row of icons, and the page path in the top bar. Search results in the left menu no longer overlap.",
-  "pub_date": "2026-11-20T12:36:12.236Z",
+  "version": "0.2.7",
+  "notes": "New Word Storm typing game: four modes, bosses, power-ups, levels and unlocks, daily missions.",
+  "pub_date": "2026-11-20T17:51:05.893Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSY240aittN2MzQTJ4c0sxbFFVa254Y3VZOFBSczQ4TjV6L0dkTFJGelJIN0JVc01heHhXNkVUMEdFUEN5dkF2dEtIZTE3Y2hMdkxYQXBlVFNYakt0cDArYW1jQVFqUXdFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MTc4MTcxCWZpbGU6RHJpZnRfMC4yLjZfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMi42Cmg4eFdCNUVLRGxnOVpUVCt3L1BySUhpUzZ1MWo3TlZ1Um5HcXRCMlBmaHI1ditRU3JoQ1BDb2RQL0hXRVRVamJUanpueS9jSk02TU82QVB2V1luT0FnPT0K",
-      "url": "https://github.com/TallTeezSteez/drift-releases/releases/download/v0.2.6/Drift-Setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSY240aittN2MzQSsrR20vT2wwbnp1b3l2aVlMSnRCWVJnbXlheEttb1g2dGJSanU3Mm5lekZYZDdoWkR0a0RyZDBYa0pTamRUVHNhUWVRakR6R043UUZqMm4yYU0yOXcwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MTk3MDY1CWZpbGU6RHJpZnRfMC4yLjdfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMi43Ck1ndkt0TDJPYkVnL09TVHMwSHZDZzVBOHN1WDllaVVrYVFaVk9qYU12NUtPbXhDREZLUE9GQThyQnVwS3hHcjZ0em5tY0pjUTVyaDlVNGkvK2U0ekRBPT0K",
+      "url": "https://github.com/TallTeezSteez/drift-releases/releases/download/v0.2.7/Drift-Setup.exe"
     }
   }
 }
