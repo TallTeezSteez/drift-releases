@@ -1,11 +1,11 @@
 {
-  "version": "0.2.5",
-  "notes": "Drift 0.2.5",
-  "pub_date": "2026-11-17T02:11:13.986Z",
+  "version": "0.2.6",
+  "notes": "Tidy left menu and top bar: Notebooks, Notes and Docs tabs, quick notes listed under Notes, Files as a folder under Docs, tools as a row of icons, and the page path in the top bar. Search results in the left menu no longer overlap.",
+  "pub_date": "2026-11-20T12:36:12.236Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSY240aittN2MzQXhkelZwSjY2N1BUeG9EVHB3Z3B5Y1VmdjVKWmoyell3TklKWFdJQithTFdlQkx2TUp2MG1rM2ZjRXJNby94QUxqS2RERzZHUlErM0VnRTJNT25pT2dvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0ODgxNDczCWZpbGU6RHJpZnRfMC4yLjVfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMi41Cnd2ckVwd0RxU3VpS3E0Rm95YmNtQSt1ZFlNcUlKU1NnN3BxOHpydU4vZThqM1Zqd2k4cE1YU0lTMUhPZXR4NzFzdGluMklLd0hBZnIrcG5KRVBTTUN3PT0K",
-      "url": "https://github.com/TallTeezSteez/drift-releases/releases/download/v0.2.5/Drift-Setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSY240aittN2MzQTJ4c0sxbFFVa254Y3VZOFBSczQ4TjV6L0dkTFJGelJIN0JVc01heHhXNkVUMEdFUEN5dkF2dEtIZTE3Y2hMdkxYQXBlVFNYakt0cDArYW1jQVFqUXdFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MTc4MTcxCWZpbGU6RHJpZnRfMC4yLjZfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMi42Cmg4eFdCNUVLRGxnOVpUVCt3L1BySUhpUzZ1MWo3TlZ1Um5HcXRCMlBmaHI1ditRU3JoQ1BDb2RQL0hXRVRVamJUanpueS9jSk02TU82QVB2V1luT0FnPT0K",
+      "url": "https://github.com/TallTeezSteez/drift-releases/releases/download/v0.2.6/Drift-Setup.exe"
     }
   }
 }
