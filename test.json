@@ -1,11 +1,11 @@
 {
-  "version": "0.2.7",
-  "notes": "New Word Storm typing game: four modes, bosses, power-ups, levels and unlocks, daily missions.",
-  "pub_date": "2026-11-20T17:51:05.893Z",
+  "version": "0.2.8",
+  "notes": "Typing Coach: real-looking animated hands and 23 new lessons.",
+  "pub_date": "2026-11-20T18:30:43.332Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSY240aittN2MzQSsrR20vT2wwbnp1b3l2aVlMSnRCWVJnbXlheEttb1g2dGJSanU3Mm5lekZYZDdoWkR0a0RyZDBYa0pTamRUVHNhUWVRakR6R043UUZqMm4yYU0yOXcwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MTk3MDY1CWZpbGU6RHJpZnRfMC4yLjdfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMi43Ck1ndkt0TDJPYkVnL09TVHMwSHZDZzVBOHN1WDllaVVrYVFaVk9qYU12NUtPbXhDREZLUE9GQThyQnVwS3hHcjZ0em5tY0pjUTVyaDlVNGkvK2U0ekRBPT0K",
-      "url": "https://github.com/TallTeezSteez/drift-releases/releases/download/v0.2.7/Drift-Setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSY240aittN2MzQTJhS3ZCK3VkaFpWR1U0eWNqWFBJeldyM0ExQ05DLzlwTHI5WFFhc0VHN3lUaUtncktwNFVaWVJqVGFpS2ZTblVDV1hqeVBNbGgzd21YVGZITlNRSlFFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MTk5NDQzCWZpbGU6RHJpZnRfMC4yLjhfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMi44Cm03eW9TQjVrSWhWc0lCclMxSXhxcDhNUTZ4WUs5N2VKcVdGQWNMZ0x3M0M4OWZFbUQzRERoWkpmcnV0eEdHc1Q4S2lSeVE3TE9NeUNGTVN6aDFIY0RBPT0K",
+      "url": "https://github.com/TallTeezSteez/drift-releases/releases/download/v0.2.8/Drift-Setup.exe"
     }
   }
 }
