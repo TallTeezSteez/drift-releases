@@ -1,11 +1,11 @@
 {
-  "version": "0.2.8",
-  "notes": "Typing Coach: real-looking animated hands and 23 new lessons.",
-  "pub_date": "2026-11-20T18:30:43.332Z",
+  "version": "0.2.9",
+  "notes": "Drift 0.2.9",
+  "pub_date": "2026-11-23T16:07:34.659Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSY240aittN2MzQTJhS3ZCK3VkaFpWR1U0eWNqWFBJeldyM0ExQ05DLzlwTHI5WFFhc0VHN3lUaUtncktwNFVaWVJqVGFpS2ZTblVDV1hqeVBNbGgzd21YVGZITlNRSlFFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MTk5NDQzCWZpbGU6RHJpZnRfMC4yLjhfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMi44Cm03eW9TQjVrSWhWc0lCclMxSXhxcDhNUTZ4WUs5N2VKcVdGQWNMZ0x3M0M4OWZFbUQzRERoWkpmcnV0eEdHc1Q4S2lSeVE3TE9NeUNGTVN6aDFIY0RBPT0K",
-      "url": "https://github.com/TallTeezSteez/drift-releases/releases/download/v0.2.8/Drift-Setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSY240aittN2MzQXpvcFVza0FiL1hYVER4UGdXNEptUEd2OW5mT3A1cFYvVEtHWjBaOVZRem13SVVMbUNkSVZZaHMzMDJ1aisxV2RwN0h5UUo1bWdrU2tnUHVuZkVNZXc0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NDUwMDU0CWZpbGU6RHJpZnRfMC4yLjlfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMi45CittR0pZVHkwN25vdmNvMG1ZSHk2TCtITTR0ckdkOGF4R1VPTHZzYm5mQ25mT21uTitNRVY4ZnVINWMwazkreWxWcU9MQVpkdW4vYVNOLzZiK09SL0JnPT0K",
+      "url": "https://github.com/TallTeezSteez/drift-releases/releases/download/v0.2.9/Drift-Setup.exe"
     }
   }
 }
