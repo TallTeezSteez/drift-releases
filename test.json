@@ -1,11 +1,11 @@
 {
-  "version": "0.2.9",
-  "notes": "Drift 0.2.9",
-  "pub_date": "2026-11-23T16:07:34.659Z",
+  "version": "0.2.10",
+  "notes": "Drift 0.2.10",
+  "pub_date": "2026-11-23T18:44:03.618Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSY240aittN2MzQXpvcFVza0FiL1hYVER4UGdXNEptUEd2OW5mT3A1cFYvVEtHWjBaOVZRem13SVVMbUNkSVZZaHMzMDJ1aisxV2RwN0h5UUo1bWdrU2tnUHVuZkVNZXc0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NDUwMDU0CWZpbGU6RHJpZnRfMC4yLjlfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMi45CittR0pZVHkwN25vdmNvMG1ZSHk2TCtITTR0ckdkOGF4R1VPTHZzYm5mQ25mT21uTitNRVY4ZnVINWMwazkreWxWcU9MQVpkdW4vYVNOLzZiK09SL0JnPT0K",
-      "url": "https://github.com/TallTeezSteez/drift-releases/releases/download/v0.2.9/Drift-Setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSY240aittN2MzQTFnZW9YeG5UNzdXNlg0Y1FoQ0pOanBsYkZZYkVlWWxYS0haQU1TKytFcVBmZms0OUFmYWxsTmxkaW9vMFFCb003cWxaWWlBYXNaOGJ2QldGaklJR2dZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NDU5NDQzCWZpbGU6RHJpZnRfMC4yLjEwX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjIuMTAKRkNlaHVKWFM0dWpJNzh6NFZxWis0c2NlMnN1Vm9ySHBITlhxYmU4VkdsUk9UVE9wS25SdDlnenVrV2YxbFlpak9WZGRpcHR2NFR2NGlrYzkwRVcwQXc9PQo=",
+      "url": "https://github.com/TallTeezSteez/drift-releases/releases/download/v0.2.10/Drift-Setup.exe"
     }
   }
 }
